@@ -11,7 +11,7 @@ let p1 = 'O';
 let p2 = 'X';
 let nextLabel = document.getElementById('next-lbl');
 // nextLabel.innerText = nextPlayer
-let counter = 0;
+
 
 //This call will create the buttons needed for the gameboard.
 createGameBoard()
@@ -33,7 +33,7 @@ for (let i=0; i<btns.length; i++)
 {
     btns[i].addEventListener('click', (event) => { takeCell(event)});
 }
-
+let counter = 0;
 // This function will be used to respond to a click event on any of the board buttons.
 function takeCell(event)
 {
@@ -73,7 +73,7 @@ function isGameOver()
     // This function returns true if all the buttons are disabled and false otherwise 
     let clickin = true;
 
-    for(i = 0; i < 10; i++) {
+    for(i = 0; i <= 9; i++) {
         if (!btns[i].disabled) {
             clickin = false;
         }
