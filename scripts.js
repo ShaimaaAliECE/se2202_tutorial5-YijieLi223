@@ -59,7 +59,7 @@ function takeCell(event)
         // let the lable with the id 'game-over-lbl' display the words 'Game Over' inside <h1> element
         let endGame = document.getElementById('game-over-lbl');
         
-        let end = document.createElement('h3');
+        let end = document.createElement('h1');
         end.innerText = "Game Over!";
 
         endGame.appendChild(end);
