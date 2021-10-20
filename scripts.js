@@ -33,7 +33,7 @@ for (let i=0; i<btns.length; i++)
 {
     btns[i].addEventListener('click', (event) => { takeCell(event)});
 }
-let counter = 0;
+let contunue = 0;
 // This function will be used to respond to a click event on any of the board buttons.
 function takeCell(event)
 {
@@ -49,7 +49,7 @@ function takeCell(event)
             nextPlayer = p2;
         }
         nextLabel.innerText = nextPlayer;
-        counter++;
+        contunue++;
 
     // Make sure the button is clickable only once (I didn't mention how to do that, look it up :) )
 
